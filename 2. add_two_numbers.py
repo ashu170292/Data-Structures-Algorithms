@@ -26,9 +26,7 @@ class Solution:
             value = sum_ % 10
             carry = sum_ // 10
             res.next = ListNode(value)
-            res= res.next
-            
-            
+            res= res.next   
         if carry:
             res.next = ListNode(carry)
         return res1.next.next
