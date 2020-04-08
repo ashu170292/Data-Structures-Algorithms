@@ -5,13 +5,12 @@
 #         self.next = None
 
 class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def addTwoNumbers(self, l1, l2):
         
         res = ListNode(-1)
         res1 = ListNode(-1)
         res1.next = res
         carry =0
-        
         while l1 or l2:
             if l1 and l2:
                 sum_ = l1.val + l2.val + carry
